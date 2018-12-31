@@ -17,23 +17,23 @@
       </div>
       <div class="sex">
         <label for="sex">性别：</label>
-        <input type="radio" name="sex" value="male">男
+        <input type="radio" name="sex" value="male" checked>男
         <input type="radio" name="sex" value="female">女
       </div>
       <div class="orientation">
         <label for="orientation">取向：</label>
         <input type="radio" name="orientation" value="lovemale">男
-        <input type="radio" name="orientation" value="lovefemale">女
+        <input type="radio" name="orientation" value="lovefemale" checked>女
       </div>
       <div class="hobby">
         <label for="hobby">爱好：</label>
         <input type="checkbox" name="hobby" value="dota">dota
-        <input type="checkbox" name="hobby" value="travel">旅游
-        <input type="checkbox" name="hobby" value="pet">宠物
+        <input type="checkbox" name="hobby" value="travel" checked>旅游
+        <input type="checkbox" name="hobby" value="pet" checked>宠物
       </div>
       <div class="comment">
         <label for="comment">评论：</label>
-        <textarea name="comment" cols="50" rows="10">ddd
+        <textarea name="comment" cols="50" rows="10" placeholder="ddd">
         </textarea>
       </div>
       <div class="select">
@@ -42,8 +42,8 @@
           <option value="bentian">本田</option>
           <option value="sabo" selected>萨博</option>
           <option value="xiandai">现代</option>
+          <input type="submit" value="提交">
         </select>
-        <div class="submit"><button>提交</button></div>
       </div>
     </form>
   </div>
