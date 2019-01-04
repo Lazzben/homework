@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nav</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background: #f1f1f1;
+        }
+        nav ul{
+            list-style: none;
+        }
+        nav a{
+            text-decoration: none;
+            color:#333;
+            padding: 10px 10px;
+            display: block;
+        }
+        nav a:hover{
+            color: white;
+            background: rgba(0, 0, 0,0.3);
+        }
+        nav{
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.3);
+            width: 650px;
+            margin: 10px auto 0;
+        }
+        nav>ul>li{
+            float: left;
+            position: relative;
+        }
+        nav::after{
+            content: " ";
+            clear: both;
+            display: block;
+        }
+        nav .child{
+            position: absolute;
+            top:100%;
+            box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.3);
+            display: none;
+        }
+        nav>ul>li:hover .child{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">作品</a></li>
+            <li>
+                <a href="#">更多</a>
+                <ul class="child">
+                    <li><a href="#">Github</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">知乎</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</body>
+</html>
