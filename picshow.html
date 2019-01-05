@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>picture</title>
+    <style>
+        ul,li{
+            margin:0;
+            padding:0;
+        }
+        .output{
+            width:810px;
+            margin: 0 auto;
+        }
+        .pic{
+            list-style: none;
+            width: 260px;
+            float: left;
+            margin-left: 10px;
+            margin-top:30px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        }
+        .pic img{
+            width: 100%;
+            opacity: 0.75;
+        }
+        .output::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+        .output h1{
+            text-align: center;
+            border-bottom: 1px #ccc solid;
+            padding-bottom: 10px;
+            color: #666;
+        }
+        .description{
+            text-align: center;
+            color:black;
+        }
+        .description p{
+            padding:1px 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="output">
+        <h1>风景列表</h1>
+        <ul class="box">
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>
+            </li>
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>
+            </li>
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>
+            </li>
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>    
+            </li>
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>
+            </li>
+            <li class="pic">
+                <img src="./png/fengjinruhua.png" alt="">
+                <div class="description"><P>风景如画</P></div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
