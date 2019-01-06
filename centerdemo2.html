@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>centerdemo2</title>
+    <style>
+        .box{
+            background: #ccc;
+            height: 500px;
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .box::before{
+            content: " ";
+            height: 100%;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .hua{
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="hua">
+            <h1>这是标题</h1>
+            <p>这段文字在当前容器内垂直水平居中</p>
+        </div>
+    </div>
+</body>
+</html>
