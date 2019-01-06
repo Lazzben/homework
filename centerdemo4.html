@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>centerdemo4.html</title>
+    <style>
+        .output{
+            border: solid pink;
+            height: 400px;
+            width: 500px;
+            text-align: center;
+        }
+        .output::before{
+            content: "";
+            display: inline-block;
+            height: 100%;
+            vertical-align: middle;
+        }
+        img{
+            height: 200px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <div class="output">
+        <img src="./png/github.jpg" alt="">
+    </div>
+</body>
+</html>
