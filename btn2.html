@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .box { 
+      padding: 10px;
+      border: 1px solid black;
+    }
+    .box.active {
+      color: white;
+      background: black;
+    }
+    
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>hello</h1>
+    <p>world</p>
+  </div>
+  <button id="addbtn">add</button>
+  <button id="removebtn">remove</button>
+  <button id="togglebtn">toggle</button>
+  <script>
+    var addbtn = document.querySelector('#addbtn')
+    var removebtn = document.querySelector('#removebtn')
+    var togglebtn = document.querySelector('#togglebtn')
+    var boxpanel = document.querySelector('.box') 
+    addbtn.onclick = function(){
+      boxpanel.classList.add('active')
+    }
+    removebtn.onclick = function(){
+      boxpanel.classList.remove('active')
+    }
+    togglebtn.onclick = function(){
+      if (boxpanel.classList.contains('active')){
+      boxpanel.classList.remove('active')
+      }else{
+      boxpanel.classList.add('active')
+      }
+    }
+  </script>
+</body>
+</html>
