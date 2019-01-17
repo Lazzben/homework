@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <style>
+    .red {
+  height:100px;
+  width: 100px;
+  background: red;
+  position: absolute;
+  color: white;
+}
+.green{
+  height:100px;
+  width: 100px;
+  background: green;
+  position: absolute;
+  color: white;
+}
+
+.tred .red,
+.tgreen .green{
+  transform: rotateY(0);
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+
+.tred .green,
+.tgreen .red{
+  transform: rotateY(180deg);
+  transition: all 1s;
+  backface-visibility: hidden;
+}
+  </style>
+</head>
+<body>
+  <div class="tred">
+    <div class='red'>你好</div>
+    <div class='green'>你好</div>
+  </div>
+</body>
+</html>
